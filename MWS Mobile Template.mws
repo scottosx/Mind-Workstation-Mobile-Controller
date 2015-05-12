@@ -1,0 +1,963 @@
+<session version="1.1.0.2">
+  <specification>
+    <spec_name>
+    </spec_name>
+  </specification>
+  <wavedata_resource>MWS Mobile Template 22.mws_wfdata</wavedata_resource>
+  <wavedata_lastedittime>03/14/2015 13:42:25</wavedata_lastedittime>
+  <properties>
+    <length>45</length>
+    <loop>False</loop>
+    <loop_times>-1</loop_times>
+    <fadein>10</fadein>
+    <fadeout>30</fadeout>
+    <custom_stopfade>15</custom_stopfade>
+    <description>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Microsoft Sans Serif;}{\f1\fnil\fcharset0 Microsoft Sans Serif;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\b\f0\fs24 DESCRIPTION:\b0\par
+\pard\li720 For use with the Mind Workstation Mobile Controller app for iOS or Android mobile devices. Control the entrainment frequencies in realtime as the session plays. All assigned tracks will adjust to your changes.\par
+\pard\par
+\b\caps devices\caps0 :\par
+       - \b0 iOS or Android mobile device\par
+         - Mind Workstation Mobile Controller app running in MobMuPlat\par
+         - Audio patch cable from mobile device to audio input\b\par
+\pard\fi-540\li1080\tx720\b0 -\tab Headphones or Speakers\par
+\pard\fi-180\li720 -\tab LED glasses for Audiostrobe. \i Run the AudioStrobe Configuration Tool before use.\i0\fs22\par
+\pard\fs24\par
+\b INSTRUCTIONS:\b0\par
+\pard\li720\f1 Plug your device into the audio jack on your computer\par
+Set the volume on the app and your device\par
+Press the On/Off Button on the app and trigger the Setup tone\par
+Start the session and let the device be recognized and configure.\par
+Adjust the knob and sliders in the app to change the values.\par
+Enjoy realtime control!\par
+\par
+\f0 Mind Workstation Mobile Controller app by Scott Hendrickson... Play with your head!\par
+\pard\f1\fs17\par
+}
+</description>
+    <showdescript_onload>True</showdescript_onload>
+    <sampling_rate_onsave>44100</sampling_rate_onsave>
+    <session_amplification>0</session_amplification>
+    <solo_id>
+    </solo_id>
+    <gui_properties>
+      <zoom_level>0</zoom_level>
+      <toppanel_expanded>True</toppanel_expanded>
+      <enginepanel_expanded>True</enginepanel_expanded>
+      <default_entrainment_track>Entrainment</default_entrainment_track>
+    </gui_properties>
+    <visualization_settings>
+      <use_sessionmix>False</use_sessionmix>
+      <apply_fades>True</apply_fades>
+    </visualization_settings>
+    <advanced_settings>
+      <disable_spectrastrobe_filtering>False</disable_spectrastrobe_filtering>
+      <require_spectrastrobe_reference>False</require_spectrastrobe_reference>
+      <disable_audiostrobe_to_spectrastrobe_conversion>False</disable_audiostrobe_to_spectrastrobe_conversion>
+      <initial_spectrastrobe_delay>1</initial_spectrastrobe_delay>
+      <audio_delay_when_spectrastrobe_present>10</audio_delay_when_spectrastrobe_present>
+    </advanced_settings>
+    <realtime_export_settings>
+      <rt_export_enabled>False</rt_export_enabled>
+      <rt_export_format>3</rt_export_format>
+      <rt_naming_option>0</rt_naming_option>
+      <rt_overwrite_option>0</rt_overwrite_option>
+      <rt_filename_base>
+      </rt_filename_base>
+      <location_params>
+        <location_params />
+        <custom_location>
+        </custom_location>
+        <location_type>0</location_type>
+      </location_params>
+    </realtime_export_settings>
+    <session_end_settings>
+      <shutdown_options>0</shutdown_options>
+      <session_path>
+      </session_path>
+      <sound_path>
+      </sound_path>
+      <file_path>
+      </file_path>
+      <file_args>
+      </file_args>
+      <play_sound>False</play_sound>
+      <play_session>False</play_session>
+      <execute_file>False</execute_file>
+    </session_end_settings>
+  </properties>
+  <engines>
+    <engine>
+      <properties>
+        <id>MWS Mobile</id>
+        <type>10</type>
+        <enabled>True</enabled>
+        <status_params>
+          <show_statuswindow>True</show_statuswindow>
+        </status_params>
+        <update_params>
+          <update_type>1</update_type>
+          <update_period>0.1</update_period>
+        </update_params>
+        <gui_properties>
+          <open>True</open>
+        </gui_properties>
+        <bio_params>
+          <device_type>1</device_type>
+          <average_seconds>0</average_seconds>
+          <gsr2_properties>
+            <convert_gsr_standard>True</convert_gsr_standard>
+          </gsr2_properties>
+        </bio_params>
+      </properties>
+      <actions>
+        <action>
+          <action_type>11</action_type>
+          <action_id>Control: Entrainment</action_id>
+          <ramp_type>3</ramp_type>
+          <ramp_seconds>0</ramp_seconds>
+          <lower_limit>0</lower_limit>
+          <upper_limit>100</upper_limit>
+          <enable_limits>False</enable_limits>
+          <timeframe_params>
+            <start_to_finish>True</start_to_finish>
+            <start>0</start>
+            <end>0</end>
+            <ramp>2</ramp>
+            <execute_times>-1</execute_times>
+          </timeframe_params>
+          <track_control_params>
+            <track_id>Entrainment</track_id>
+            <subtype>-1</subtype>
+          </track_control_params>
+          <format_params>
+            <format_type>2</format_type>
+            <format_variables>
+              <format_variable num="0" active="True">
+                <ratio_params>
+                  <highref>100</highref>
+                  <lowref>0</lowref>
+                  <hightarget>20</hightarget>
+                  <lowtarget>0</lowtarget>
+                </ratio_params>
+              </format_variable>
+            </format_variables>
+          </format_params>
+        </action>
+        <action>
+          <action_type>20</action_type>
+          <action_id>Stop Session</action_id>
+          <ramp_type>3</ramp_type>
+          <ramp_seconds>0</ramp_seconds>
+          <lower_limit>0</lower_limit>
+          <upper_limit>100</upper_limit>
+          <enable_limits>False</enable_limits>
+          <timeframe_params>
+            <start_to_finish>True</start_to_finish>
+            <start>0</start>
+            <end>0</end>
+            <ramp>2</ramp>
+            <execute_times>-1</execute_times>
+          </timeframe_params>
+          <format_params>
+            <format_type>0</format_type>
+            <format_variables>
+              <format_variable num="0" active="True">
+                <noformat_params />
+              </format_variable>
+            </format_variables>
+          </format_params>
+          <execute_params>
+            <execute_only_once>False</execute_only_once>
+            <execute_only_once_else>False</execute_only_once_else>
+            <compare_type>2</compare_type>
+            <compare_value>200</compare_value>
+            <compare_type2>3</compare_type2>
+            <compare_value2>201</compare_value2>
+            <or>False</or>
+            <execute_action_type>0</execute_action_type>
+            <execute_path>
+            </execute_path>
+            <execute_commands>
+            </execute_commands>
+            <list_entry_id>1</list_entry_id>
+            <else_params>
+              <execute_action_type>-1</execute_action_type>
+              <execute_path>
+              </execute_path>
+              <execute_commands>
+              </execute_commands>
+              <list_entry_id>1</list_entry_id>
+            </else_params>
+          </execute_params>
+        </action>
+      </actions>
+    </engine>
+  </engines>
+  <controllers>
+    <track>
+      <properties>
+        <id>Entrainment</id>
+        <type>501</type>
+        <allow_block_overlapping>False</allow_block_overlapping>
+        <pan>0</pan>
+        <muted>False</muted>
+        <graph_prefs>
+          <rampbydefault>True</rampbydefault>
+        </graph_prefs>
+        <gui_properties>
+          <edit_type>-1</edit_type>
+          <show_type>-1</show_type>
+          <toppanel_expanded>True</toppanel_expanded>
+          <zoom_level>0</zoom_level>
+          <open>False</open>
+        </gui_properties>
+        <effects_added />
+      </properties>
+      <blocks>
+        <block>
+          <properties>
+            <type>501</type>
+            <id>Entrainment</id>
+            <start>00:00:00</start>
+            <duration>00:45:00</duration>
+            <auto_scaling>True</auto_scaling>
+            <allow_element_overlapping>True</allow_element_overlapping>
+            <loop_content>False</loop_content>
+          </properties>
+          <nodes>
+            <node value="12" time="00:00:00" ramp="True" splinex="35" spliney="73" steptime="2" ramp_type="2" />
+            <node value="7" time="00:07:00" ramp="True" splinex="50" spliney="50" steptime="2" ramp_type="1" />
+            <node value="7" time="00:12:00" ramp="True" splinex="38" spliney="81.46551" steptime="2" ramp_type="2" />
+            <node value="5" time="00:18:00" ramp="True" splinex="50" spliney="50" steptime="2" ramp_type="1" />
+            <node value="5" time="00:39:00" ramp="True" splinex="61" spliney="28" steptime="2" ramp_type="2" />
+            <node value="9" time="00:43:00" ramp="True" splinex="50" spliney="50" steptime="2" ramp_type="1" />
+          </nodes>
+        </block>
+      </blocks>
+    </track>
+  </controllers>
+  <content>
+    <track>
+      <properties>
+        <id>Tones Track 1</id>
+        <type>2</type>
+        <allow_block_overlapping>False</allow_block_overlapping>
+        <pan>0</pan>
+        <muted>False</muted>
+        <graph_prefs>
+          <rampbydefault>True</rampbydefault>
+        </graph_prefs>
+        <gui_properties>
+          <edit_type>2</edit_type>
+          <show_type>-2</show_type>
+          <toppanel_expanded>True</toppanel_expanded>
+          <zoom_level>0</zoom_level>
+          <open>False</open>
+        </gui_properties>
+        <effects_added>
+          <effect_params>
+            <effect_type>10</effect_type>
+            <graph_prefs>
+              <rampbydefault>True</rampbydefault>
+            </graph_prefs>
+          </effect_params>
+          <effect_params>
+            <effect_type>33</effect_type>
+            <graph_prefs>
+              <rampbydefault>True</rampbydefault>
+            </graph_prefs>
+          </effect_params>
+          <effect_params>
+            <effect_type>43</effect_type>
+            <graph_prefs>
+              <rampbydefault>True</rampbydefault>
+            </graph_prefs>
+          </effect_params>
+          <effect_params>
+            <effect_type>23</effect_type>
+            <graph_prefs>
+              <rampbydefault>True</rampbydefault>
+            </graph_prefs>
+          </effect_params>
+        </effects_added>
+        <ent_controllers>
+          <ent_controller_params>
+            <ent_control_type>0</ent_control_type>
+            <graph_control_params>
+              <track_control_params>
+                <track_id>Entrainment</track_id>
+                <subtype>0</subtype>
+              </track_control_params>
+              <format_params>
+                <format_type>0</format_type>
+              </format_params>
+            </graph_control_params>
+          </ent_controller_params>
+        </ent_controllers>
+      </properties>
+      <blocks>
+        <block>
+          <properties>
+            <type>2</type>
+            <id>Isochronic Tones 1</id>
+            <start>00:00:00</start>
+            <duration>00:45:00</duration>
+            <auto_scaling>False</auto_scaling>
+            <allow_element_overlapping>True</allow_element_overlapping>
+            <loop_content>False</loop_content>
+            <tonegen_properties>
+              <multiple_voices>False</multiple_voices>
+              <invert_voices>False</invert_voices>
+              <tonegen_type>1</tonegen_type>
+            </tonegen_properties>
+          </properties>
+          <nodes>
+            <node value="120" time="00:00:00" ramp="True" splinex="50" spliney="50" steptime="2" ramp_type="1" />
+          </nodes>
+          <effects>
+            <effect>
+              <properties>
+                <type>10</type>
+                <loop_content>False</loop_content>
+              </properties>
+              <nodes>
+                <node value="0" time="00:00:00" ramp="True" splinex="50" spliney="50" steptime="2" ramp_type="1" />
+                <node value="2" time="00:01:30" ramp="True" splinex="50" spliney="50" steptime="2" ramp_type="1" />
+                <node value="2" time="00:40:00" ramp="True" splinex="50" spliney="50" steptime="2" ramp_type="1" />
+                <node value="5" time="00:41:00" ramp="True" splinex="50" spliney="50" steptime="2" ramp_type="1" />
+              </nodes>
+            </effect>
+            <effect>
+              <properties>
+                <type>23</type>
+                <loop_content>False</loop_content>
+              </properties>
+              <nodes>
+                <node value="100" time="00:00:00" ramp="True" splinex="50" spliney="50" steptime="2" ramp_type="1" />
+              </nodes>
+            </effect>
+            <effect>
+              <properties>
+                <type>43</type>
+                <loop_content>False</loop_content>
+              </properties>
+              <elements>
+                <element>
+                  <start>00:00:00</start>
+                  <duration>00:07:00</duration>
+                  <waveform_properties>
+                    <wf_preset>1</wf_preset>
+                    <ramp>True</ramp>
+                    <align_firstlast>False</align_firstlast>
+                    <waveform_nodes>
+                      <wf_node level="0" phase="0" />
+                      <wf_node level="31" phase="5" />
+                      <wf_node level="59" phase="10" />
+                      <wf_node level="81" phase="15" />
+                      <wf_node level="95" phase="20" />
+                      <wf_node level="100" phase="25" />
+                      <wf_node level="95" phase="30" />
+                      <wf_node level="81" phase="35" />
+                      <wf_node level="59" phase="40" />
+                      <wf_node level="31" phase="45" />
+                      <wf_node level="0" phase="50" />
+                      <wf_node level="-31" phase="55" />
+                      <wf_node level="-59" phase="60" />
+                      <wf_node level="-81" phase="65" />
+                      <wf_node level="-95" phase="70" />
+                      <wf_node level="-100" phase="75" />
+                      <wf_node level="-95" phase="80" />
+                      <wf_node level="-81" phase="85" />
+                      <wf_node level="-59" phase="90" />
+                      <wf_node level="-31" phase="95" />
+                      <wf_node level="0" phase="100" />
+                    </waveform_nodes>
+                  </waveform_properties>
+                </element>
+                <element>
+                  <start>00:07:00</start>
+                  <duration>00:10:56.6360000</duration>
+                  <waveform_properties>
+                    <wf_preset>0</wf_preset>
+                    <ramp>True</ramp>
+                    <align_firstlast>False</align_firstlast>
+                    <waveform_nodes>
+                      <wf_node level="0" phase="0" />
+                      <wf_node level="60" phase="3" />
+                      <wf_node level="83" phase="8" />
+                      <wf_node level="94" phase="13" />
+                      <wf_node level="100" phase="19" />
+                      <wf_node level="100" phase="25" />
+                      <wf_node level="100" phase="31" />
+                      <wf_node level="94" phase="37" />
+                      <wf_node level="83" phase="42" />
+                      <wf_node level="60" phase="47" />
+                      <wf_node level="0" phase="50" />
+                      <wf_node level="-60" phase="53" />
+                      <wf_node level="-83" phase="58" />
+                      <wf_node level="-94" phase="63" />
+                      <wf_node level="-100" phase="69" />
+                      <wf_node level="-100" phase="75" />
+                      <wf_node level="-100" phase="81" />
+                      <wf_node level="-94" phase="87" />
+                      <wf_node level="-83" phase="92" />
+                      <wf_node level="-60" phase="97" />
+                      <wf_node level="0" phase="100" />
+                    </waveform_nodes>
+                  </waveform_properties>
+                </element>
+                <element>
+                  <start>00:17:56.6360000</start>
+                  <duration>00:27:03.3640000</duration>
+                  <waveform_properties>
+                    <wf_preset>1</wf_preset>
+                    <ramp>True</ramp>
+                    <align_firstlast>False</align_firstlast>
+                    <waveform_nodes>
+                      <wf_node level="0" phase="0" />
+                      <wf_node level="31" phase="5" />
+                      <wf_node level="59" phase="10" />
+                      <wf_node level="81" phase="15" />
+                      <wf_node level="95" phase="20" />
+                      <wf_node level="100" phase="25" />
+                      <wf_node level="95" phase="30" />
+                      <wf_node level="81" phase="35" />
+                      <wf_node level="59" phase="40" />
+                      <wf_node level="31" phase="45" />
+                      <wf_node level="0" phase="50" />
+                      <wf_node level="-31" phase="55" />
+                      <wf_node level="-59" phase="60" />
+                      <wf_node level="-81" phase="65" />
+                      <wf_node level="-95" phase="70" />
+                      <wf_node level="-100" phase="75" />
+                      <wf_node level="-95" phase="80" />
+                      <wf_node level="-81" phase="85" />
+                      <wf_node level="-59" phase="90" />
+                      <wf_node level="-31" phase="95" />
+                      <wf_node level="0" phase="100" />
+                    </waveform_nodes>
+                  </waveform_properties>
+                </element>
+              </elements>
+            </effect>
+            <effect>
+              <properties>
+                <type>33</type>
+                <loop_content>False</loop_content>
+              </properties>
+              <nodes>
+                <node value="90" time="00:00:00" ramp="True" splinex="50" spliney="50" steptime="2" ramp_type="1" />
+              </nodes>
+            </effect>
+          </effects>
+        </block>
+      </blocks>
+    </track>
+    <track>
+      <properties>
+        <id>Sound Track 1</id>
+        <type>0</type>
+        <allow_block_overlapping>False</allow_block_overlapping>
+        <pan>0</pan>
+        <muted>False</muted>
+        <graph_prefs>
+          <rampbydefault>True</rampbydefault>
+        </graph_prefs>
+        <gui_properties>
+          <edit_type>0</edit_type>
+          <show_type>0</show_type>
+          <toppanel_expanded>True</toppanel_expanded>
+          <zoom_level>0</zoom_level>
+          <open>False</open>
+        </gui_properties>
+        <effects_added>
+          <effect_params>
+            <effect_type>10</effect_type>
+            <graph_prefs>
+              <rampbydefault>True</rampbydefault>
+            </graph_prefs>
+          </effect_params>
+          <effect_params>
+            <effect_type>33</effect_type>
+            <graph_prefs>
+              <rampbydefault>True</rampbydefault>
+            </graph_prefs>
+          </effect_params>
+          <effect_params>
+            <effect_type>43</effect_type>
+            <graph_prefs>
+              <rampbydefault>True</rampbydefault>
+            </graph_prefs>
+          </effect_params>
+          <effect_params>
+            <effect_type>23</effect_type>
+            <graph_prefs>
+              <rampbydefault>True</rampbydefault>
+            </graph_prefs>
+          </effect_params>
+          <effect_params>
+            <effect_type>401</effect_type>
+            <graph_prefs>
+              <rampbydefault>True</rampbydefault>
+            </graph_prefs>
+          </effect_params>
+        </effects_added>
+        <ent_controllers>
+          <ent_controller_params>
+            <ent_control_type>0</ent_control_type>
+            <graph_control_params>
+              <track_control_params>
+                <track_id>Entrainment</track_id>
+                <subtype>-1</subtype>
+              </track_control_params>
+              <format_params>
+                <format_type>0</format_type>
+              </format_params>
+            </graph_control_params>
+          </ent_controller_params>
+        </ent_controllers>
+      </properties>
+      <blocks>
+        <block>
+          <properties>
+            <type>0</type>
+            <id>Sound File 1</id>
+            <start>00:00:00</start>
+            <duration>00:45:00</duration>
+            <auto_scaling>False</auto_scaling>
+            <allow_element_overlapping>True</allow_element_overlapping>
+            <loop_content>False</loop_content>
+            <soundfile_parameters>
+              <loopdelay>-1</loopdelay>
+              <crossfade>2</crossfade>
+              <stereofilter_type>1</stereofilter_type>
+              <stereofilter_customlevel>0.5</stereofilter_customlevel>
+              <amp>0</amp>
+              <pan>0</pan>
+              <fadein>0</fadein>
+              <fadeout>0</fadeout>
+              <loop>True</loop>
+              <length>1</length>
+              <filepath>Rain.npsnd</filepath>
+              <cut_parameters>
+                <cut_enabled>False</cut_enabled>
+                <cut_start>0</cut_start>
+                <cut_end>0</cut_end>
+              </cut_parameters>
+              <lastedittime>07/13/2007 10:49:18</lastedittime>
+            </soundfile_parameters>
+          </properties>
+          <effects>
+            <effect>
+              <properties>
+                <type>10</type>
+                <loop_content>False</loop_content>
+              </properties>
+              <nodes>
+                <node value="100" time="00:00:00" ramp="True" splinex="50" spliney="50" steptime="2" ramp_type="1" />
+              </nodes>
+            </effect>
+            <effect>
+              <properties>
+                <type>23</type>
+                <loop_content>False</loop_content>
+              </properties>
+              <nodes>
+                <node value="50" time="00:00:00" ramp="True" splinex="50" spliney="50" steptime="2" ramp_type="1" />
+                <node value="50" time="00:39:00" ramp="True" splinex="50" spliney="50" steptime="2" ramp_type="1" />
+                <node value="40" time="00:41:00" ramp="True" splinex="50" spliney="50" steptime="2" ramp_type="1" />
+              </nodes>
+            </effect>
+            <effect>
+              <properties>
+                <type>43</type>
+                <loop_content>False</loop_content>
+              </properties>
+              <elements>
+                <element>
+                  <start>00:00:00</start>
+                  <duration>00:40:00</duration>
+                  <waveform_properties>
+                    <wf_preset>1</wf_preset>
+                    <ramp>True</ramp>
+                    <align_firstlast>False</align_firstlast>
+                    <waveform_nodes>
+                      <wf_node level="0" phase="0" />
+                      <wf_node level="31" phase="5" />
+                      <wf_node level="59" phase="10" />
+                      <wf_node level="81" phase="15" />
+                      <wf_node level="95" phase="20" />
+                      <wf_node level="100" phase="25" />
+                      <wf_node level="95" phase="30" />
+                      <wf_node level="81" phase="35" />
+                      <wf_node level="59" phase="40" />
+                      <wf_node level="31" phase="45" />
+                      <wf_node level="0" phase="50" />
+                      <wf_node level="-31" phase="55" />
+                      <wf_node level="-59" phase="60" />
+                      <wf_node level="-81" phase="65" />
+                      <wf_node level="-95" phase="70" />
+                      <wf_node level="-100" phase="75" />
+                      <wf_node level="-95" phase="80" />
+                      <wf_node level="-81" phase="85" />
+                      <wf_node level="-59" phase="90" />
+                      <wf_node level="-31" phase="95" />
+                      <wf_node level="0" phase="100" />
+                    </waveform_nodes>
+                  </waveform_properties>
+                </element>
+              </elements>
+            </effect>
+            <effect>
+              <properties>
+                <type>33</type>
+                <loop_content>False</loop_content>
+              </properties>
+              <nodes>
+                <node value="90" time="00:00:00" ramp="True" splinex="50" spliney="50" steptime="2" ramp_type="1" />
+              </nodes>
+            </effect>
+            <effect>
+              <properties>
+                <type>401</type>
+                <loop_content>False</loop_content>
+                <bandpass_track_properties>
+                  <rolloff>2</rolloff>
+                </bandpass_track_properties>
+              </properties>
+              <elements>
+                <element>
+                  <start>00:00:00</start>
+                  <duration>00:45:00</duration>
+                  <bandpass_properties>
+                    <bands>
+                      <band high="600" low="200" ramp="True" />
+                    </bands>
+                  </bandpass_properties>
+                </element>
+              </elements>
+            </effect>
+          </effects>
+        </block>
+      </blocks>
+    </track>
+    <track>
+      <properties>
+        <id>Sound Track 3</id>
+        <type>0</type>
+        <allow_block_overlapping>False</allow_block_overlapping>
+        <pan>0</pan>
+        <muted>False</muted>
+        <graph_prefs>
+          <rampbydefault>True</rampbydefault>
+        </graph_prefs>
+        <gui_properties>
+          <edit_type>0</edit_type>
+          <show_type>0</show_type>
+          <toppanel_expanded>True</toppanel_expanded>
+          <zoom_level>0</zoom_level>
+          <open>False</open>
+        </gui_properties>
+        <effects_added>
+          <effect_params>
+            <effect_type>10</effect_type>
+            <graph_prefs>
+              <rampbydefault>True</rampbydefault>
+            </graph_prefs>
+          </effect_params>
+          <effect_params>
+            <effect_type>33</effect_type>
+            <graph_prefs>
+              <rampbydefault>True</rampbydefault>
+            </graph_prefs>
+          </effect_params>
+          <effect_params>
+            <effect_type>43</effect_type>
+            <graph_prefs>
+              <rampbydefault>True</rampbydefault>
+            </graph_prefs>
+          </effect_params>
+          <effect_params>
+            <effect_type>23</effect_type>
+            <graph_prefs>
+              <rampbydefault>True</rampbydefault>
+            </graph_prefs>
+          </effect_params>
+          <effect_params>
+            <effect_type>401</effect_type>
+            <graph_prefs>
+              <rampbydefault>True</rampbydefault>
+            </graph_prefs>
+          </effect_params>
+        </effects_added>
+        <ent_controllers>
+          <ent_controller_params>
+            <ent_control_type>0</ent_control_type>
+            <graph_control_params>
+              <track_control_params>
+                <track_id>Entrainment</track_id>
+                <subtype>-1</subtype>
+              </track_control_params>
+              <format_params>
+                <format_type>0</format_type>
+              </format_params>
+            </graph_control_params>
+          </ent_controller_params>
+        </ent_controllers>
+      </properties>
+      <blocks>
+        <block>
+          <properties>
+            <type>0</type>
+            <id>Sound File 3</id>
+            <start>00:00:48</start>
+            <duration>00:39:12</duration>
+            <auto_scaling>False</auto_scaling>
+            <allow_element_overlapping>True</allow_element_overlapping>
+            <loop_content>False</loop_content>
+            <soundfile_parameters>
+              <loopdelay>-1</loopdelay>
+              <crossfade>2</crossfade>
+              <stereofilter_type>1</stereofilter_type>
+              <stereofilter_customlevel>0.5</stereofilter_customlevel>
+              <amp>0</amp>
+              <pan>0</pan>
+              <fadein>20</fadein>
+              <fadeout>30</fadeout>
+              <loop>True</loop>
+              <length>1.17783</length>
+              <filepath>ThoughtSounds Sample 3.npsnd</filepath>
+              <cut_parameters>
+                <cut_enabled>False</cut_enabled>
+                <cut_start>0</cut_start>
+                <cut_end>0</cut_end>
+              </cut_parameters>
+              <lastedittime>02/22/2008 16:41:58</lastedittime>
+            </soundfile_parameters>
+          </properties>
+          <effects>
+            <effect>
+              <properties>
+                <type>10</type>
+                <loop_content>False</loop_content>
+              </properties>
+              <nodes>
+                <node value="40" time="00:00:00" ramp="True" splinex="50" spliney="50" steptime="2" ramp_type="1" />
+              </nodes>
+            </effect>
+            <effect>
+              <properties>
+                <type>23</type>
+                <loop_content>False</loop_content>
+              </properties>
+              <nodes>
+                <node value="40" time="00:00:00" ramp="True" splinex="50" spliney="50" steptime="2" ramp_type="1" />
+                <node value="45" time="00:16:39.6000000" ramp="True" splinex="50" spliney="50" steptime="2" ramp_type="1" />
+              </nodes>
+            </effect>
+            <effect>
+              <properties>
+                <type>43</type>
+                <loop_content>False</loop_content>
+              </properties>
+              <elements>
+                <element>
+                  <start>00:00:00</start>
+                  <duration>00:29:12</duration>
+                  <waveform_properties>
+                    <wf_preset>1</wf_preset>
+                    <ramp>True</ramp>
+                    <align_firstlast>False</align_firstlast>
+                    <waveform_nodes>
+                      <wf_node level="0" phase="0" />
+                      <wf_node level="31" phase="5" />
+                      <wf_node level="59" phase="10" />
+                      <wf_node level="81" phase="15" />
+                      <wf_node level="95" phase="20" />
+                      <wf_node level="100" phase="25" />
+                      <wf_node level="95" phase="30" />
+                      <wf_node level="81" phase="35" />
+                      <wf_node level="59" phase="40" />
+                      <wf_node level="31" phase="45" />
+                      <wf_node level="0" phase="50" />
+                      <wf_node level="-31" phase="55" />
+                      <wf_node level="-59" phase="60" />
+                      <wf_node level="-81" phase="65" />
+                      <wf_node level="-95" phase="70" />
+                      <wf_node level="-100" phase="75" />
+                      <wf_node level="-95" phase="80" />
+                      <wf_node level="-81" phase="85" />
+                      <wf_node level="-59" phase="90" />
+                      <wf_node level="-31" phase="95" />
+                      <wf_node level="0" phase="100" />
+                    </waveform_nodes>
+                  </waveform_properties>
+                </element>
+              </elements>
+            </effect>
+            <effect>
+              <properties>
+                <type>33</type>
+                <loop_content>False</loop_content>
+              </properties>
+              <nodes>
+                <node value="90" time="00:00:00" ramp="True" splinex="50" spliney="50" steptime="2" ramp_type="1" />
+              </nodes>
+            </effect>
+            <effect>
+              <properties>
+                <type>401</type>
+                <loop_content>False</loop_content>
+                <bandpass_track_properties>
+                  <rolloff>2</rolloff>
+                </bandpass_track_properties>
+              </properties>
+              <elements>
+                <element>
+                  <start>00:00:00</start>
+                  <duration>00:29:12</duration>
+                  <bandpass_properties>
+                    <bands>
+                      <band high="700" low="100" ramp="True" />
+                    </bands>
+                  </bandpass_properties>
+                </element>
+              </elements>
+            </effect>
+          </effects>
+        </block>
+      </blocks>
+    </track>
+    <track>
+      <properties>
+        <id>AudioStrobe Track 1</id>
+        <type>3</type>
+        <allow_block_overlapping>False</allow_block_overlapping>
+        <pan>0</pan>
+        <muted>False</muted>
+        <graph_prefs>
+          <rampbydefault>True</rampbydefault>
+        </graph_prefs>
+        <gui_properties>
+          <edit_type>3</edit_type>
+          <show_type>-2</show_type>
+          <toppanel_expanded>True</toppanel_expanded>
+          <zoom_level>0</zoom_level>
+          <open>False</open>
+        </gui_properties>
+        <effects_added>
+          <effect_params>
+            <effect_type>37</effect_type>
+            <graph_prefs>
+              <rampbydefault>True</rampbydefault>
+            </graph_prefs>
+          </effect_params>
+          <effect_params>
+            <effect_type>47</effect_type>
+            <graph_prefs>
+              <rampbydefault>True</rampbydefault>
+            </graph_prefs>
+          </effect_params>
+          <effect_params>
+            <effect_type>27</effect_type>
+            <graph_prefs>
+              <rampbydefault>True</rampbydefault>
+            </graph_prefs>
+          </effect_params>
+        </effects_added>
+        <ent_controllers>
+          <ent_controller_params>
+            <ent_control_type>0</ent_control_type>
+            <graph_control_params>
+              <track_control_params>
+                <track_id>Entrainment</track_id>
+                <subtype>0</subtype>
+              </track_control_params>
+              <format_params>
+                <format_type>0</format_type>
+              </format_params>
+            </graph_control_params>
+          </ent_controller_params>
+        </ent_controllers>
+      </properties>
+      <blocks>
+        <block>
+          <properties>
+            <type>3</type>
+            <id>AudioStrobe 1</id>
+            <start>00:00:00</start>
+            <duration>00:45:00</duration>
+            <auto_scaling>False</auto_scaling>
+            <allow_element_overlapping>True</allow_element_overlapping>
+            <loop_content>False</loop_content>
+          </properties>
+          <nodes>
+            <node value="100" time="00:00:00" ramp="True" splinex="50" spliney="50" steptime="2" ramp_type="1" />
+          </nodes>
+          <effects>
+            <effect>
+              <properties>
+                <type>27</type>
+                <loop_content>False</loop_content>
+              </properties>
+              <nodes>
+                <node value="100" time="00:00:00" ramp="True" splinex="50" spliney="50" steptime="2" ramp_type="1" />
+              </nodes>
+            </effect>
+            <effect>
+              <properties>
+                <type>47</type>
+                <loop_content>False</loop_content>
+              </properties>
+              <elements>
+                <element>
+                  <start>00:00:00</start>
+                  <duration>00:45:00</duration>
+                  <waveform_properties>
+                    <wf_preset>1</wf_preset>
+                    <ramp>True</ramp>
+                    <align_firstlast>False</align_firstlast>
+                    <waveform_nodes>
+                      <wf_node level="0" phase="0" />
+                      <wf_node level="31" phase="5" />
+                      <wf_node level="59" phase="10" />
+                      <wf_node level="81" phase="15" />
+                      <wf_node level="95" phase="20" />
+                      <wf_node level="100" phase="25" />
+                      <wf_node level="95" phase="30" />
+                      <wf_node level="81" phase="35" />
+                      <wf_node level="59" phase="40" />
+                      <wf_node level="31" phase="45" />
+                      <wf_node level="0" phase="50" />
+                      <wf_node level="-31" phase="55" />
+                      <wf_node level="-59" phase="60" />
+                      <wf_node level="-81" phase="65" />
+                      <wf_node level="-95" phase="70" />
+                      <wf_node level="-100" phase="75" />
+                      <wf_node level="-95" phase="80" />
+                      <wf_node level="-81" phase="85" />
+                      <wf_node level="-59" phase="90" />
+                      <wf_node level="-31" phase="95" />
+                      <wf_node level="0" phase="100" />
+                    </waveform_nodes>
+                  </waveform_properties>
+                </element>
+              </elements>
+            </effect>
+            <effect>
+              <properties>
+                <type>37</type>
+                <loop_content>False</loop_content>
+              </properties>
+              <nodes>
+                <node value="90" time="00:00:00" ramp="True" splinex="50" spliney="50" steptime="2" ramp_type="1" />
+              </nodes>
+            </effect>
+          </effects>
+        </block>
+      </blocks>
+    </track>
+  </content>
+</session>
